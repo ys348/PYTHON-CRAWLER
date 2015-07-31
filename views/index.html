@@ -1,0 +1,115 @@
+<!doctype html>
+  
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+		<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+		<script src="/static/zclip/jquery.zclip.js"></script>
+	</head>
+	
+	<script>
+//$(document).ready(function(){
+//  $("#copy-link-wrap").zclip({
+//    path: '/static/zclip/ZeroClipboard.swf',
+//    copy: 'hello you',
+//    afterCopy: function() {
+      // console.log('copied');
+//      alert('Data in clipboard! Now you can paste it somewhere');
+//    }
+//  });
+//});
+</script>
+
+
+	<body style="overflow-x:hidden;overflow-y:auto">
+
+
+	<div style="background-color:#D96D00;width:100%;">
+		<div class="row">
+			<h1 style='margin-left:5%;'>
+				Site Struncture Analysis from URLs
+			</h1>
+			<h5 style='margin-left:5%;'>Well, I'm a beginner in python crawler, and there are still some bugs in this crawler script. I'm just keep learning it :)</h5>
+			<h5 class="col-lg-offset-9 col-md-offset-8 col-sm-offset-4 col-xs-offset-1" style='font-weight:bold;'>Contact me: yuanshen.ncu@gmail.com</h5>
+		</div>
+	</div>
+	
+<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8"
+	style="margin-top:6px;padding-top:20px;background-color:white;float:left;margin-bottom:10px;">
+<span style="font-weight:bold;font-size:14px;">Dose not work for your site? Try the following popular sites, at least you can get an idea about my analysis tool:</span>
+
+<div style="font-weight:bold;font-size:12px;margin-left:20px;margin-top:6px;">
+google.com<br/>Adobe.com<br/>android.com<br/>Linkedin.com<br/>Github.com
+<br/>Weather.com<br/>Indeed.com<br/>Skype.com<br/>Target.com<br/>comcast.net<br/>Foxnews.com<br/>Washingtonpost.com<br/></div>
+</div>		
+		
+		
+<div id='URL_input_box' style="padding: 50px 50px 10px;">
+
+      <div class="row">
+	  
+         <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
+			<span id='refresh_text' style='visibility:hidden;font-size:12px;font-weight:bold;color:#c0c0c0;margin-left:20px;margin-bottom:6px;'>Want to quit? Anything goes wrong? Just hit the Quit button!</span>
+            <div class="input-group">
+               <input id="url_input" type="text" class="form-control"
+			   placeholder="enter the URL of the target website, eg:google.com">
+               <span class="input-group-btn">
+                  <button id='refresh_button' class="btn btn-default" type="button" style="display:none;" onclick='terminate_query()'>
+                     Quit!
+                  </button>
+				  <button id='go_button' class="btn btn-default" type="button" style="display:inline;" onclick='urlGo()'>
+                     Go!
+                  </button>
+               </span>
+            </div><!-- /input-group -->
+         </div><!-- /.col-lg-8 -->
+      </div><!-- /.row -->
+	  
+	<div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10
+		text-center"  style="margin-top:13px;margin-bottom:5px;visibility:hidden;">
+         <p id="status" class="text-info" style="height:26px;padding-top:3px;font-weight:bold;font-size:17px;"></p>
+    </div>
+	<div id='tree_loading' class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10
+		text-center"  style="margin-top:13px;margin-bottom:5px;display:none;">
+         <p  class="text-info" style="height:26px;padding-top:3px;font-weight:bold;font-size:17px;">loading...</p>
+    </div>
+	  
+<div class="col-lg-offset-3 col-lg-6 col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8"
+	style="margin-top:6px;padding:20px;background-color:#D96D00;float:left;margin-bottom:60px;">
+<span style="font-weight:bold;font-size:14px;"><span style='color:red;'>*</span>Pick up one mode for our web crawler:<br/></span>
+<input type='radio' name='search_mode' value='no_1' checked><span> Quick but simple (it takes 1~5 minutes)<br/></span>
+<input type='radio' name='search_mode' value='no_2'><span> In the middle (it takes 1~15 minutes)<br/></span>
+<input type='radio' name='search_mode' value='no_3'><span> Slow but productive (it takes 1~30 minutes)<br/></span>
+<span style="font-weight:bold;font-size:12px;margin-top:7px;">Please be aware, the actual processing time highly depends on the complexity of your target website and the internet speed.</span>
+
+</div>
+
+</div>
+
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<link href="/static/css/jquery.treetable.css" rel="stylesheet" type="text/css" />
+<link href="/static/css/jquery.treetable.theme.default.css" rel="stylesheet" type="text/css" />
+<script src="/static/js/jquery.treetable.js"></script>
+<script src="/static/js/query.js"></script>
+<script>
+
+$("#example-testing").treetable({ expandable: true,clickableNodeNames: true,initialState:'expanded',indent:'100'});
+
+
+
+function doSth(){
+	
+	//alert('doSth called');
+};
+
+
+</script>
+		
+		
+	</body>
+</html>
